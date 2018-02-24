@@ -1,0 +1,178 @@
+@media only screen and (max-width: 767px) { 
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 999999;;
+        width: 100%;
+        padding-bottom: 0.625rem;
+        ul.navigation {
+            li {
+                display: block;
+                float: none;
+            }
+        }
+    }
+    .con_content {
+        ul.social {
+            float: left;
+            display: block;
+        }
+    }
+    .block_pro {
+       .row {
+            > div {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .block_wwa {
+       .row {
+            > div {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .block_tes, .block_contact, .block_pro {
+        > div {
+            margin-bottom: 2rem;
+        }
+    }
+    .main_slider {
+        .slick-track {
+            height: 320px;
+        }
+        .main_slide_item {
+            position: relative;
+            .item_text {
+                p, span {
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    margin-bottom: 5px;                }
+                
+            }
+        }
+        .slick-dots{
+            display: none !important;
+        }
+    }
+    .map_wrapper {
+        width: 100%;
+        max-width: 460px;
+    //    height: 50%;
+        height: 190px;
+        margin: 0;
+    }
+    #slide_projects {
+        margin-bottom: 0;
+        .slick-list, .sm_img_box_item, .sm_img_box, div.col-sm-12 {
+            margin-bottom: 0;
+        }
+        div.margin_bottom_20 {margin-bottom: 20px;}
+    }
+    footer {
+        ul.navigation {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li {
+//                display: inline-block;
+                width: 40%;
+                
+            }
+            li[data-name="Home"]{
+                order: 10;
+            }
+            li[data-name="Who We Are"] {
+                order: 20;
+            }
+            li[data-name="Features"] {
+                order: 30;
+            }
+            li[data-name="Our Clients"]{
+                order: 40;
+            }
+            li[data-name="Projects"] {
+                order: 50;
+            }
+            li[data-name="Contact Us"] {
+                order: 60;
+            }
+        }
+    }
+
+}
+// Small devices (landscape phones, 576px and up)
+//@media only screen and (min-width: 576px) { 
+//
+//}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 767px) { 
+    h3 {
+        font-size: 1.25rem; 
+    }
+        #ham_menu {
+            display: none;
+            visibility: hidden;
+            height: 1px;
+        }
+     
+        nav {
+            display: block;
+            .block_nav_soc {
+                float: right;
+            }
+            ul {
+                li {
+                    float: left;
+                }
+            }
+            
+        }
+        ul.navigation {
+            width: 100%;
+            display: block;
+            li {
+                display: inline-block;
+                float: left;
+            }
+        }
+        ul.social {
+            float: right;
+            display: block;
+        }
+        .con_content {
+            ul.social {
+                float: left;
+                display: block;
+            }
+        }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) { 
+ 
+        ul.navigation {
+            width: auto;
+            display: inline-block;
+        }
+
+    
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) { 
+        .logo_wrap {
+            float: left;
+            img {
+                width: auto;
+                max-width: 182px;
+                max-height: 90px;
+            }
+        }
+    nav {
+        height: 90px;
+    }
+    
+}

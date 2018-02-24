@@ -1,0 +1,89 @@
+.main_slider {
+    .slick-track {
+        height: 420px;
+    }
+    .main_slide_item {
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        .item_text {
+            @include font_raleway_ultralight;
+            color: $white;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            top: 30%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: -30%;
+            list-style: none;
+            p, span {
+                font-size: 3rem;
+                line-height: 3rem;
+                max-width: 380px;
+                span{
+                    display: block;
+                }
+            }
+            p.sm_slide_text {
+                font-size: 1.125rem;
+            }
+            .btn.view_more {
+                display: block;
+                margin-top: 2rem;
+                @include border_radius_5px;
+                border: 1px solid $active_color;
+                color: $active_color;
+                background-color: $white;
+                padding: 0.625rem 1.25rem;
+            }
+            
+        }
+    }
+    .slick-dots {
+        position: relative;
+        bottom: 30px;
+        width: 60%;
+        padding-left: 0;
+        margin: 0 auto;
+        li{
+            display: inline-block;
+            float: left;
+            text-indent: -999rem;
+            width: 21px;
+            height: 21px;
+            border: 0 none;
+            margin: 0 0.625rem 0 0;
+            background-color: $slider_indicator_color;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            &.slick-active{
+                background-color: $white;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        display: inline-block;
+        width: 70px;
+        height: 48px;
+        text-indent: -999rem;
+        border: 0 none;
+        margin: 0;
+        padding: 0;
+    }
+    .slick-arrow.slick-next {
+        background: url("../images/icons/icon_arr_right_70.png") no-repeat center center transparent;
+        right: 0;
+    }
+    .slick-arrow.slick-prev {
+        background: url("../images/icons/icon_arr_left_70.png") no-repeat center center transparent;
+        left: 0;
+    }
+
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,700');
+/*
+ 
+ultra light 200
+regular 400
+semi bold 600
+bold 700
+
+*/
+@mixin border_radius_50 {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+@mixin border_radius_10px {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+@mixin border_radius_5px {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+@mixin font_raleway_ultralight {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+@mixin font_raleway_regular {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin font_raleway_semibold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+@mixin font_raleway_bold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+/* variables */
+
+$box_bg_color: #f1f1f1;
+$box_bg_color_hover: #e5e5e5;
+$slider_indicator_color: #c4c5c5;
+$social_color: #7f7f7f;
+$text_color: #555555;
+$footer_bottom_text_color: #9d9d9d;
+$white: #ffffff;
+$active_color: #4b88fe;
+$btn_bg_color: #4986fb;
+$btn_bg_color_hover: #356edb;
+$linkedin_color: #1a85bc;
+$tweeter_color: #00acee;
+$fb_color: #46629e;
